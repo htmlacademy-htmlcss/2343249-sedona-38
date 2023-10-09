@@ -21,7 +21,14 @@ body {
   line-height: 26px;
   color:#000;
   margin:0;
+  background-color: #F2F2F2;
+  width: 1280px;
+}
 
+.page-container {
+  background-color:#FFF;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .navigation-link {
@@ -31,16 +38,11 @@ body {
   color:#000;
   text-decoration: none;
 }
- .button .page-header {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
- }
 
  .hero {
   background-image:  url("../img/divider.png"), url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #ada0af;
   background-size: contain, cover;
   background-position: bottom, center ;
   width: 1200px;
@@ -103,11 +105,18 @@ body {
   list-style:none;
   margin:0;
 }
-.subsribe-index{
-  background-image:  url("../img/Subscribe_main.jpg");
+.subscribe-custom{
+  background-image: url("../img/Subscribe_main.jpg");
   background-repeat: no-repeat;
   background-color: #8b7275;
   background-size: cover;
+}
+
+ input::placeholder {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
 }
 .search-link {
   font-size: 20px;
@@ -134,12 +143,14 @@ body {
 }
 
 .button-min {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }
 
 .button-max{
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;

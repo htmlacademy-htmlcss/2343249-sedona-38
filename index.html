@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header" data-test="header">
       <a class="logo" href="#">
         <img class="logo" src="img/logo.svg" width:="140" height="70"  alt="Логотип">
@@ -57,11 +58,11 @@
       </div>
       <div class="advantages-list-container">
         <ul class="advantages-list list">
-          <li class="advantages-item">
-            <div class="darck-blue">
+          <li class="advantages-item darck-blue">
+
               <h3 class="headers-light">Настоящий городок</h3>
               <p class="description-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
+
             <img src="img/advantages_photo-1.jpg" width="800" height="385" alt="Фото пейзажа Седоны домик на фоне гор с цветами">
           </li>
           <li class="advantages-item light-blue">
@@ -82,11 +83,9 @@
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
-          <li class="advantages-item">
-            <div class="darck-blue">
-              <h3 class="headers-light">Там есть мост дьявола</h3>
-              <p class="description-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
+          <li class="advantages-item darck-blue">
+            <h3 class="headers-light">Там есть мост дьявола</h3>
+            <p class="description-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="img/advantages_photo-2.jpg" width="800" height="385" alt="Фото гор в Седоне">
           </li>
         </ul>
@@ -98,7 +97,7 @@
         <p class="description">Опытный персонал и качественное обслуживание!</p>
       </div>
       <ul class="serviсe-list list">
-        <li class="serviсe-item">
+        <li class="serviсe-item light-blue">
           <div class="serviсe-list-container">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -114,7 +113,7 @@
             <span class="visually-hidden">Еда</span>
           </div>
         </li>
-        <li class="serviсe-item">
+        <li class="serviсe-item light-blue">
           <div class="serviсe-list-container">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
@@ -133,15 +132,15 @@
         <a class="button-max button-dark search-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </div>
     </section>
-    <section class="subsribe-index" data-test="subscribe">
-      <div class="subsribe-container">
+    <section class="subscribe subscribe-custom" data-test="subscribe">
+      <div class="subscribe-container">
         <h2 class="titles titles-light">Подпишитесь на рассылку</h2>
         <p class="description description-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
       </div>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
-          <label class="visually-hidden" for="subsribe-email"></label>
-          <input type="text" name="subsribe-email" id="subsribe-email" placeholder="Ваш email">
+          <label class="visually-hidden" for="subscribe-email">Ваш email</label>
+          <input type="text" name="subscribe-email" id="subscribe-email" placeholder="Ваш email">
         </p>
         <div class="button-container">
           <button class="button-max button-light" type="submit"> Подписаться</button>
@@ -184,5 +183,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>
