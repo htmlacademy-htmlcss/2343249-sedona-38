@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#000;
+  margin:0;
+  background-color: #F2F2F2;
+  width: 1280px;
+}
+
+.page-container {
+  background-color:#FFF;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#000;
+  text-decoration: none;
+}
+
+ .hero {
+  background-image:  url("../img/divider.png"), url("../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #ada0af;
+  background-size: contain, cover;
+  background-position: bottom, center ;
+  width: 1200px;
+  height: 485px;
+ }
+
+ .hero-img {
+  width: 458px;
+  display:block;
+  margin: 0 auto;
+ }
+
+ .titles {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+ }
+
+ .description
+  {
+  color:#333;
+  text-align: center;
+ }
+
+ .titles-light,
+ .description-light {
+  color:#FFF;
+ }
+
+ .advantages-item h3,
+ .serviсe-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+ }
+
+ .advantages-item p,
+ .serviсe-item p {
+  font-size: 18px;
+  line-height: 21px;
+  color:#333;
+  text-align: center;
+ }
+
+.darck-blue {
+  background-color: #82B3D3;
+
+}
+.light-blue {
+  background-color:#83b3d31f;
+}
+.blue {
+  background-color:#83b3d333;
+}
+.list {
+  list-style:none;
+  margin:0;
+}
+.subscribe-custom{
+  background-image: url("../img/Subscribe_main.jpg");
+  background-repeat: no-repeat;
+  background-color: #8b7275;
+  background-size: cover;
+}
+
+ input::placeholder {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+.search-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.button-dark{
+  background-color:  #756157;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  color:#FFF
+}
+.button-light {
+  background-color:#82B3D3;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+}
+
+.button-min {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.button-max{
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.footer-contact-phone{
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color:#000;
+}
+
+.header-search-container {
+  background-image:  url("../img/Subscribe_catalog.jpg");
+  background-repeat: no-repeat;
+  background-color: #8b7275;
+  background-size: cover;
+  color:#FFF;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  color:#FFF;
+}
+.catalog-filter-title,
+prise-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-button-light {
+  font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
+color:#FFF
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color:#333;
+}
+
+.catalog-item-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000;
+}
+
+.description-catalog-item{
+  font-size: 18px;
+  line-height: 21px;
+  color:#333;
+}
+
+.description-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color:#FFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color:#000;
+  background-color: #F2F2F2;
+}
+
+.pagination-button {
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #FFF;
+  color: #000;
+  border-radius: 4px;
+  border: none;
+}
