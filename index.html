@@ -23,7 +23,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user list">
+        <ul class="navigation-user-list list">
           <li class="navigation-item">
             <a class="navigation-link-search" href="#">
               <img src="img/search.svg" width="18" height="18">
@@ -41,7 +41,7 @@
         <div class="link-container">
           <a class="button-min button-dark navigation-link" href="catalog.html">Хочу сюда!</a>
         </div>
-      </nav>
+       </nav>
     </header>
     <main class="main-index" data-test="main">
       <div class="hero-container">
@@ -52,40 +52,42 @@
       </div>
     <section class="advantages" data-test="advantages">
       <div class="advantages-container">
-        <h2 class="titles">Седона — небольшой городок в Аризоне,
+        <h2 class="titles advantages-title">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h2>
         <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
       <div class="advantages-list-container">
         <ul class="advantages-list list">
           <li class="advantages-item darck-blue">
-
+            <div class="advantages-text-wrapper">
               <h3 class="headers-light">Настоящий городок</h3>
               <p class="description-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-
+            </div>
             <img src="img/advantages_photo-1.jpg" width="800" height="385" alt="Фото пейзажа Седоны домик на фоне гор с цветами">
           </li>
           <li class="advantages-item light-blue">
-            <div class="light-blue">
+            <div class="advantages-text-wrapper light-blue">
               <h3>Небольшая площадь</h3>
               <p>Все достопримечательности находятся очень близко</p>
             </div>
           </li>
           <li class="advantages-item blue">
-            <div class="blue">
+            <div class="advantages-text-wrapper blue">
               <h3>Красивая дорога</h3>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages-item">
-            <div class="light-blue">
+            <div class="advantages-text-wrapper light-blue">
               <h3>Мало туристов</h3>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
           <li class="advantages-item darck-blue">
-            <h3 class="headers-light">Там есть мост дьявола</h3>
-            <p class="description-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <div class="advantages-text-wrapper">
+              <h3 class="headers-light">Там есть мост дьявола</h3>
+              <p class="description-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
             <img src="img/advantages_photo-2.jpg" width="800" height="385" alt="Фото гор в Седоне">
           </li>
         </ul>
@@ -93,7 +95,7 @@
     </section>
     <section class="serviсe">
       <div class="serviсe-container">
-        <h2 class="titles">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <h2 class="titles serviсe-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
         <p class="description">Опытный персонал и качественное обслуживание!</p>
       </div>
       <ul class="serviсe-list list">
@@ -125,10 +127,10 @@
     </section>
     <section class="search" data-test="search">
       <div class="search-container">
-        <h2 class="titles">Заинтересовались?</h2>
+        <h2 class="titles search-title">Заинтересовались?</h2>
         <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <div class="link-container">
+      <div class="link-container-search">
         <a class="button-max button-dark search-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </div>
     </section>
@@ -137,6 +139,7 @@
         <h2 class="titles titles-light">Подпишитесь на рассылку</h2>
         <p class="description description-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
       </div>
+
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label class="visually-hidden" for="subscribe-email">Ваш email</label>
@@ -159,9 +162,9 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://t.me/htmlacademy">
               <img src="img/Social_Tg.svg" width="18" height="16">
-              <span class=" https://t.me/htmlacademy">Телеграмм</span>
+              <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="footer-social-item">
