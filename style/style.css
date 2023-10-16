@@ -102,6 +102,8 @@ flex-grow: 1;
   width:140px;
   height: 70px;
   margin-right:28px;
+  margin-bottom: -6px;
+  position: relative;
 }
 
 .navigation-link {
@@ -216,8 +218,10 @@ flex-grow: 1;
   padding: 64px 64px;
 }
 
-.serviсe-title {
-  margin-bottom:30px;
+.serviсe-title,
+.subscribe-title,
+.search-title {
+    margin-bottom:20px;
 }
 
 .serviсe-list{
@@ -232,17 +236,15 @@ flex-grow: 1;
 }
 
 .search{
-  padding: 96px 304px;
+  padding: 96px 50px;
   width: 1200px;
   box-sizing: border-box;
 }
 
-.search-title{
-  margin-bottom: 20px;
-}
-
 .search-container{
+  margin: 0 auto;
   margin-bottom: 54px;
+  width: 592px;
 }
 
 .link-container-search{
@@ -255,11 +257,13 @@ flex-grow: 1;
 .subscribe {
   width:1200px;
   box-sizing: border-box;
-  padding: 96px 258px;
+  padding: 96px 50px;
 }
 
 .subscribe-container{
   margin:0 auto;
+  margin-bottom: 20px;
+  width:475px;
 }
 
 .subscribe-custom{
@@ -336,6 +340,7 @@ flex-grow: 1;
   background-color: #8b7275;
   background-size: cover;
   color:#FFF;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -369,6 +374,23 @@ color:#FFF
   font-size: 18px;
   line-height: 21px;
   color:#333;
+  margin-left: auto;
+  margin-right: 70px;
+  width: 292px;
+  box-sizing: border-box;
+}
+
+.catalog-filter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-wrapper{
+  display: flex;
+}
+.catalog-product {
+  padding: 50px 70px 60px;
 }
 
 .catalog-item-link {
@@ -385,6 +407,13 @@ color:#FFF
   color:#333;
 }
 
+.catalog-product-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .description-rating {
   font-size: 16px;
   line-height: 20px;
@@ -393,6 +422,9 @@ color:#FFF
 }
 
 .pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color:#FFF;
   font-size: 20px;
@@ -400,6 +432,10 @@ color:#FFF
   line-height: 36px;
   background-color: #82B3D3;
   border-radius: 4px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .pagination-current {
@@ -426,4 +462,12 @@ color:#FFF
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.pagination-list {
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 40px;
 }

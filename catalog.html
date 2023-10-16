@@ -63,7 +63,8 @@
       <section class="catalog-search" data-test="filter">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
+          <div class="filter-wrapper">
+            <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list list">
               <li class="catalog-filter-item">
@@ -103,7 +104,9 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button-min button-light" type="submit">Показать</button>
+          </div>
+          <div class="prise-filter-wrapper">
+            <button class="button-min button-light" type="submit">Показать</button>
           <button class="button-min button-light" type="reset">Сбросить</button>
             <fieldset class="prise-filter-group">
               <legend class="prise-filter-title">Стоимость, ₽</legend>
@@ -122,12 +125,15 @@
               <div class="range-slider">
               </div>
             </fieldset>
+          </div>
+
           </form>
       </section>
       </div>
+      <!-- каталог -->
       <section class="catalog-product" data-test="catalog">
         <div class="catalog-product-header">
-          <h2 class="titles">Найдено гостиниц: 38</h2>
+          <h2 class="titles catalog-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
@@ -220,7 +226,7 @@
             </article>
           </li>
         </ul>
-        <ul class="pagination list">
+        <ul class="pagination-list list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current" href="#">1</a>
           </li>
@@ -243,8 +249,8 @@
       </section>
       <section class="subscribe" data-test="subscribe">
         <div class="subscribe-container">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="titles subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         </div>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
