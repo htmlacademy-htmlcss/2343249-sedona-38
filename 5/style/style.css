@@ -30,6 +30,11 @@ body {
 
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style:none;
   margin:0;
@@ -54,9 +59,10 @@ body {
 
 .social-list {
   display: flex;
-  width: 142px;
+  width: 145px;
   box-sizing: border-box;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .page-container {
@@ -72,30 +78,73 @@ body {
   flex-grow: 1;
 }
 
+.button-dark{
+  background-color:  #756157;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  color:#FFF
+}
+.button-light {
+  background-color:#82B3D3;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+}
+
+.button-min {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 8px;
+  width: 160px;
+  display: block;
+  text-align: center;
+}
+
+.button-max{
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  display: block;
+  padding: 8px 50px;
+}
+
 .navigation {
 display:flex;
 flex-wrap: wrap;
 flex-grow: 1;
+align-items: center;
 }
 
 .navigation-list {
   display:flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 339px;
   flex-wrap: wrap;
 
 }
 
-.navigation-item {
-  flex-grow: 1;
+.number {
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .navigation-user-list {
   display:flex;
-  width: 88px;
   margin-left:auto;
+  flex-wrap: wrap;
 }
+
+.navigation-link-search{
+  padding:19px 12px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
 
 .logo {
   display:block;
@@ -112,6 +161,8 @@ flex-grow: 1;
   line-height: 24px;
   color:#000;
   text-decoration: none;
+  padding: 20px 16px;
+  display: inline-block;
 }
 
  .hero {
@@ -198,6 +249,10 @@ flex-grow: 1;
   width: 1200px;
   flex-wrap: wrap;
   background-color: #82B3D3;
+ }
+
+ .advantages-item:last-child {
+  flex-direction: row-reverse;
  }
 
  .advantages-text-wrapper{
@@ -295,37 +350,16 @@ flex-grow: 1;
   text-transform: uppercase;
   text-decoration: none;
 }
-.button-dark{
-  background-color:  #756157;
-  border-radius: 4px;
-  text-transform: uppercase;
-  border: none;
-  text-decoration: none;
-  color:#FFF
-}
-.button-light {
-  background-color:#82B3D3;
-  color: #FFF;
-  text-transform: uppercase;
-  border: none;
-  text-decoration: none;
+
+.social-link {
+  width: 48px;
+  height: 40px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-min {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-}
 
-.button-max{
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  display: block;
-  padding: 8px 50px;
-}
 .footer-contact-phone{
   text-decoration: none;
   font-size: 40px;
@@ -349,17 +383,28 @@ flex-grow: 1;
   line-height: 78px;
   color:#FFF;
   margin:0;
+  margin-bottom: 8px;
 }
 .catalog-filter-title,
 prise-filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .control {
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.control-input {
+  margin-right: 16px;
+}
+
+.control-input:last-child {
+  margin-right: 0;
 }
 
 .catalog-button-light {
@@ -470,4 +515,71 @@ color:#FFF
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 40px;
+}
+
+.breadcrumbs-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-link {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.button-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.button-icon:last-child {
+  margin-right: 0;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.catalog-filter-group:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter-item {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
+}
+
+.prise-filter-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.prise-filter-group {
+  border: none;
+}
+
+.prise-filter-button-wrapper .button-min {
+  margin-bottom: 32px;
+}
+
+.prise-filter-list {
+  display: flex;
 }
