@@ -124,6 +124,7 @@ img {
 
 .advantages-img {
   object-fit: cover;
+  max-height:385px ;
 }
 
 .navigation {
@@ -300,7 +301,7 @@ align-items: center;
 .serviсe-title,
 .subscribe-title,
 .search-title {
-    margin-bottom:20px;
+  margin-bottom:20px;
 }
 
 .serviсe-list{
@@ -581,6 +582,10 @@ color:#FFF
   margin-bottom: 40px;
 }
 
+.catalog-item-photo {
+  object-fit: cover;
+}
+
 .stars {
   width: 140px;
   height: 37px;
@@ -646,5 +651,6 @@ color:#FFF
 .control-prise {
   width: 143px;
 }
+
 
 
