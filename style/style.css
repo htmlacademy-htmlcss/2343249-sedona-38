@@ -294,6 +294,7 @@ align-items: center;
 
 .navigation-link:active {
   opacity: 0.5;
+
 }
 
  .hero {
@@ -626,10 +627,52 @@ input {
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 16px;
+  display:flex;
+  align-items: center;
 }
 
-.control-input {
+.control-input[type="checkbox"] {
+  margin: 0;
   margin-right: 16px;
+  width:20px;
+  height: 20px;
+  appearance:none;
+  background-color: #FFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.control-input[type="radio"] {
+  margin: 0;
+  margin-right: 16px;
+  width:20px;
+  height: 20px;
+  appearance:none;
+  background-color: #FFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.control-input[type="checkbox"]:checked {
+  background-image:url(../img/checkbox.svg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"]:checked {
+  background-image:url(../img/radio.svg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.control-input:focus-visible {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.control:hover,
+.control:active {
+  opacity: 0.6;
 }
 
 .control-input:last-child {
@@ -655,6 +698,7 @@ color:#FFF
   padding: 14px 20px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  appearance: none;
 }
 
 .select-control:focus-visible,
@@ -795,7 +839,11 @@ color:#FFF
   margin-right: 10px;
   font-size: 16px;
   line-height: 21px;
+}
 
+.breadcrumbs-link:hover,
+.breadcrumbs-link:active {
+  opacity: 0.6;
 }
 
 .breadcrumbs-item {
@@ -815,7 +863,7 @@ color:#FFF
 }
 
 
-.breadcrumbs-item-home::after {
+.breadcrumbs-item:not(:last-child)::after {
   content: " ";
   display: block;
   width: 8px;
@@ -960,6 +1008,10 @@ color:#FFF
   gap: 2px;
 }
 
+.prise-filter-item {
+  position: relative;
+}
+
 .control-prise {
   width: 103px;
   padding: 12px 20px;
@@ -968,6 +1020,7 @@ color:#FFF
   border: none;
   color:#000;
   font-weight: 700;
+
   }
 
 .control-prise:focus-visible,
@@ -984,6 +1037,17 @@ color:#FFF
 
 .control-prise-revers {
   border-radius: 0px 4px 4px 0px;
+}
+
+.control-prise-label {
+  position: absolute;
+  font-size: 18px;
+  line-height: 24px;
+  color:rgba(0, 0, 0, 0.3);
+  top:50%;
+  right: 20px;
+  transform: translateY(-50%);
+
 }
 
 .serviсe-subscribe-house::before {
