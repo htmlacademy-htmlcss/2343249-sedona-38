@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body>
     <div class="page-container">
@@ -43,7 +44,7 @@
           </div>
          </nav>
       </header>
-    <main class="main-inner">
+    <main class="main-inner" data-test="main>
       <div class="header-search-container">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -61,9 +62,9 @@
       </header>
       <section class="catalog-search" data-test="filter">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="filter-wrapper">
-            <fieldset class="catalog-filter-group">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
+          <div class="filter-wrapper" >
+            <fieldset class="catalog-filter-group" >
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list list">
               <li class="catalog-filter-item">
@@ -139,13 +140,11 @@
               <button class="button-min button-light" type="submit">Применить</button>
               <button class="button-min button-transperent reset" type="reset">Сбросить</button>
             </div>
-
-
           </form>
       </section>
       </div>
       <!-- каталог -->
-      <section class="catalog-product" data-test="catalog">
+      <section class="catalog-product" data-test="catalog" data-test="catalog">
         <div class="catalog-product-header">
           <h2 class="titles catalog-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
@@ -269,7 +268,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe" data-test="subscribe">
+      <section class="subscribe" data-test="subscribe" data-test="subscribe">
         <div class="subscribe-container">
           <h2 class="titles subscribe-title">Подпишитесь на рассылку</h2>
           <p class="description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -284,7 +283,7 @@
       </form>
       </section>
     </main>
-    <footer class="page-footer" data-test="footer">
+    <footer class="page-footer" data-test="footer" data-test="footer">
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list list">
