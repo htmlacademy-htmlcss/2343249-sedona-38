@@ -352,7 +352,7 @@ img {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.3);
   margin: 0 auto 30px;
 }
 
@@ -361,7 +361,7 @@ img {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
   margin: 0 auto 30px;
 }
 
@@ -492,7 +492,7 @@ img {
 }
 
 .subscribe-custom {
-  background-image: url("../img/subscribe_main.jpg");
+  background-image: url("../img/subscribe-main.jpg");
   background-repeat: no-repeat;
   background-color: #8b7275;
   background-size: cover;
@@ -603,7 +603,7 @@ input::placeholder {
 }
 
 .header-search-container {
-  background-image: url("../img/subscribe_catalog.jpg");
+  background-image: url("../img/subscribe-catalog.jpg");
   background-repeat: no-repeat;
   background-color: #8b7275;
   background-size: cover;
@@ -723,12 +723,13 @@ input::placeholder {
 }
 
 .select-control:hover {
-  outline: 2px solid #68A2CA;
+  border: 2px solid #68A2CA;
+
 }
 
 .select-control:disabled {
   color: #000;
-  outline: 2px solid #0000004D;
+  border: 2px solid #0000004D;
 }
 
 .catalog-filter {
@@ -1084,7 +1085,7 @@ input::placeholder {
 .serviсe-subscribe-house::before {
   content: " ";
   display: block;
-  background-image: url("../img/Icon=home.svg");
+  background-image: url("../img/icon-home.svg");
   width: 75px;
   height: 72px;
   margin: 0 auto;
@@ -1094,7 +1095,7 @@ input::placeholder {
 .serviсe-subscribe-food::before {
   content: " ";
   display: block;
-  background-image: url("../img/Icon=food.svg");
+  background-image: url("../img/icon-food.svg");
   width: 74px;
   height: 70px;
   margin: 0 auto;
@@ -1104,7 +1105,7 @@ input::placeholder {
 .serviсe-subscribe-souvenirs::before {
   content: " ";
   display: block;
-  background-image: url("../img/Icon=souvenir.svg");
+  background-image: url("../img/icon-souvenir.svg");
   width: 64px;
   height: 76px;
   margin: 0 auto;
