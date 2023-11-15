@@ -756,6 +756,10 @@ input::placeholder {
   height: 100%;
 }
 
+.catalog-item {
+  display: flex;
+}
+
 .description-catalog-item {
   font-size: 18px;
   line-height: 21px;
